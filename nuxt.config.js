@@ -61,6 +61,7 @@ export default {
     }
   },
   generate: {
+    fallback: true,
     routes: ['/article/1', '/article/2', '/article/3']
   },
 
