@@ -19,7 +19,6 @@ export default {
     ]
   },
   target: 'static',
-  ssr: false,
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
