@@ -28,7 +28,7 @@ export default {
     return { title: this.article.name }
   },
   mounted() {
-    fetch(`http://demo-api.vsdev.space/api/articles/${this.$route.params.id}`, {
+    fetch(`https://demo-api.vsdev.space/api/articles/${this.$route.params.id}`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     })

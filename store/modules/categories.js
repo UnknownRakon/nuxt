@@ -16,7 +16,7 @@ const mutations = {
 
 const actions = {
   GET_CATEGORIES: async (context) => {
-    await fetch("http://demo-api.vsdev.space/api/categories", {
+    await fetch("https://demo-api.vsdev.space/api/categories", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })

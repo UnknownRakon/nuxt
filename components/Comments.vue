@@ -36,7 +36,7 @@ export default {
   methods: {
     async getComments() {
       await fetch(
-        `http://demo-api.vsdev.space/api/articles/${this.id}/comments`,
+        `https://demo-api.vsdev.space/api/articles/${this.id}/comments`,
         {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
@@ -59,7 +59,7 @@ export default {
       if (data.name !== '' && data.comment !== '') {
         this.validateError = false
         await fetch(
-          `http://demo-api.vsdev.space/api/articles/${this.id}/comments`,
+          `https://demo-api.vsdev.space/api/articles/${this.id}/comments`,
           {
             method: 'POST',
             headers: {
