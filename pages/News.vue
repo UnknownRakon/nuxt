@@ -1,7 +1,7 @@
 <template>
   <v-container class="d-flex pa-2 flex-wrap">
     <loader v-if="load" />
-    <Filters v-if="!load" />
+    <filters v-if="!load" />
     <v-row>
       <v-card
         v-for="article in articles"
@@ -30,8 +30,11 @@
 </template>
 
 <script>
+import Loader from '../components/Loader.vue'
+import filters from '../components/Filters.vue'
 export default {
   name: 'News',
+  components: { Loader, filters },
   data() {
     return { articles: [], load: true }
   },

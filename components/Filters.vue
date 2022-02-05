@@ -8,19 +8,24 @@
 
 <script>
 export default {
-  name: "Filters",
+  name: 'Filters',
   data() {
-    return {};
+    return {}
   },
   computed: {
     categories() {
-      return this.$store.getters.CATEGORIES;
+      return this.$store.getters.CATEGORIES
     },
   },
   mounted() {
-    this.$store.dispatch("GET_CATEGORIES");
+    this.fetchCategories()
   },
-};
+  methods: {
+    fetchCategories() {
+      return this.$store.dispatch('GET_CATEGORIES')
+    },
+  },
+}
 </script>
 <style lang="scss">
 .filters {
